@@ -8,7 +8,7 @@ class Clock extends React.Component {
 
     render() {
         let date = new Date()
-        let hours = date.getHours() % 12
+        let hours = date.getHours()
         let minutes = date.getMinutes() % 60
         let timeofday = ""
 
@@ -25,7 +25,7 @@ class Clock extends React.Component {
         return(
             <div>
                 <h1>
-                    {hours}:{minutes} {timeofday}
+                    {hours % 12}:{minutes} {timeofday}
                 </h1>
             </div>
         )
