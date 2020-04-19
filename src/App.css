@@ -9,19 +9,38 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #6d7381;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 50px;
+}
+.App-body {
+  background-color: #282c34;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 25px;
+}
+
+.App-footer {
+  background-color: #6d7381;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white
 }
 
 .App-link {
@@ -35,4 +54,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+ul {
+  text-align: left;
+}
+
+.ToDo-list-img {
+  margin: 10px
+}
+
+.ToDo-list-checkbox {
+  margin-right: 10px
+}
+
+.Jokes-leader {
+  color: gold
 }
