@@ -11,12 +11,14 @@ class Header extends React.Component {
 
     render() {
         return(
-            <div className="App-header">
-                <p>This is the Header? {this.state.answer} </p>
-                <nav>
-                    <h5><Link className="Link" to="/">Home</Link></h5>
-                    <h5><Link className="Link" to="/apps">My Apps</Link></h5>
-                </nav>
+            <div className="App-background">
+                <div className="layer">
+                    <p>This is the Header? {this.state.answer} </p>
+                    <nav>
+                        <h5><Link className="Link" to="/">Home</Link></h5>
+                        <h5><Link className="Link" to="/apps">My Apps</Link></h5>
+                    </nav>
+                </div>
             </div>
         )
     }

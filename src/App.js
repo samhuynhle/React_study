@@ -5,7 +5,7 @@ import { BrowserRouter as Router,
          from "react-router-dom"
 import './App.css'
 import MyApps from './Components/MyApps/MyApps.js'
-import HomeComponents from './Components/HomePage/HomeComponents.js'
+import Home from './Components/HomePage/Home.js'
 import Footer from './Components/Footer.js'
 import Header from './Components/Header.js'
 
@@ -18,7 +18,7 @@ class App extends React.Component {
   }
 
   Home() {
-    return <HomeComponents/>
+    return <Home/>
   }
 
   MyApps() {

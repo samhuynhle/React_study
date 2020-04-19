@@ -5,10 +5,11 @@ class ToDoItem extends React.Component {
         super(props)
         this.state = {
             isCompleted: this.props.completed,
-            name: this.props.goal
+            name: this.props.goal,
+            visible:true
         }
         this.goal = this.props.goal
-        this.image = `https://picsum.photos/id/${this.props.random}/50/50`
+        this.image = `https://picsum.photos/id/${this.props.random}/100/100`
     }
 
 
@@ -22,15 +23,18 @@ class ToDoItem extends React.Component {
                 this.setState(state => ({
                     isCompleted: true
                 }))
+                this.setState(state => ({
+                    visible: false
+                }))
             }
         }
         return(
-            <div>
+            <div className={this.state.visible?'fadeIn':'fadeOut'}>
                 <input 
                     type="checkbox"
                     defaultChecked={this.state.isCompleted}
                     onChange={() => {handleCheck(this.state.isCompleted, this.state.name)}} value={this.state.name}
-                    className="ToDo-list-checkbox"
+                    className={'ToDo-list-checkbox'}
                 />
                 <label htmlFor="mind">{this.goal}</label>
                 <br></br>

@@ -20,7 +20,9 @@ class ToDo extends React.Component {
         return(
             <div className="ToDo-list">
                 <h1>To Do List: </h1>
-                {final}
+                <div className="rowC">
+                    {final}
+                </div>
             </div>
         )
     }

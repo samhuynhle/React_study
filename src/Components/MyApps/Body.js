@@ -26,7 +26,7 @@ class Body extends React.Component {
         return(
             <div className="App-body">
                 <ToDo/>
-                <div>
+                <div className="Jokes-container">
                     <h1>Jokes for You: </h1>
                     {final}
                 </div>
