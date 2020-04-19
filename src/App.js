@@ -1,29 +1,50 @@
 import React from 'react'
+import { BrowserRouter as Router, 
+         Switch,
+         Route}
+         from "react-router-dom"
 import './App.css'
-import Header from './Components/Header.js'
-import Body from './Components/Body.js'
+import MyApps from './Components/MyApps/MyApps.js'
+import HomeComponents from './Components/HomePage/HomeComponents.js'
 import Footer from './Components/Footer.js'
-import jokes from './Services/jokelist.js'
+import Header from './Components/Header.js'
 
 class App extends React.Component {
-  constructor(props) {
-    super(props)
+  constructor() {
+    super()
     this.state = {
-      count: 0
+      "answer": "Yes"
     }
-    this.jokes = jokes()
   }
 
-  render () {
+  Home() {
+    return <HomeComponents/>
+  }
 
+  MyApps() {
+    return <MyApps/>;
+  }
+
+  render() {
     return (
-      <div className="App">
-        <Header/>
-        <Body/>
-        <Footer jokes={this.jokes}/>
-      </div>
-    )
+      <Router>
+        <div>
+          <Header answer={this.state.answer}/>
+
+          <Switch>
+            <Route path="/apps">
+              <this.MyApps/>
+            </Route>
+            <Route path="/">
+              <this.Home />
+            </Route>
+          </Switch>
+
+          <Footer/>
+        </div>
+      </Router>
+    );
   }
 }
 
-export default App;
+export default App

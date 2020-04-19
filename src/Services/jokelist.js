@@ -3,7 +3,8 @@ function jokelist () {
         "Yorick walks into a bar": "There is no counter",
         "Knock Knock": null,
         "This is funny?": "No",
-        "You're a joke": null
+        "You're a joke": null, 
+        "How did the Romans write LOL?": "XD"
     }
     return jokes
 }

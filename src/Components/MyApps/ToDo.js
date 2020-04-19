@@ -12,13 +12,14 @@ class ToDo extends React.Component {
         let final = []
         let random
         for(var item of this.ToDoList) {
-            random = Math.floor(Math.random() * 1000)
+            random = Math.floor(Math.random() * 100)
             
             //passing down data through props from ToDo into ToDoItem
-            final.push(<ToDoItem key={item} goal={item} random={random}/>)
+            final.push(<ToDoItem key={item} goal={item} random={random} completed={false}/>)
         }
         return(
             <div className="ToDo-list">
+                <h1>To Do List: </h1>
                 {final}
             </div>
         )

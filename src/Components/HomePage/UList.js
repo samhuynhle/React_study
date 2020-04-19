@@ -19,7 +19,7 @@ class UList extends React.Component {
 
         return(
             <div>
-                <h2> Things I value:</h2>
+                <h3> Things I value:</h3>
                 <ul>
                     {final}
                 </ul>

@@ -24,10 +24,9 @@ class Clock extends React.Component {
 
         return(
             <div>
-                <p>It is: </p>
-                <h2>
+                <h1>
                     {hours}:{minutes} {timeofday}
-                </h2>
+                </h1>
             </div>
         )
     }

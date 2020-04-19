@@ -1,29 +1,23 @@
 import React from 'react'
-import logo from '../Assets/logo.svg'
-import Hello from './Hello.js'
-import UList from './UList.js'
-import MyInfo from './MyInfo.js'
-
+import { Link } from "react-router-dom"
 
 class Header extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-          count: 0
+            answer: this.props.answer
         }
-    this.list = [[<Hello/>,"Hello"], [<MyInfo/>,"MyInfo"], [<UList/>,"UList"]]
-      }
+    }
 
-    render(){
-        let final = []
-        for (let item of this.list) {
-            final.push(<div key={item[1]}>{item[0]}</div>)
-        }
-        return (
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                {final}
-            </header>
+    render() {
+        return(
+            <div className="App-header">
+                <p>This is the Header? {this.state.answer} </p>
+                <nav>
+                    <h5><Link className="Link" to="/">Home</Link></h5>
+                    <h5><Link className="Link" to="/apps">My Apps</Link></h5>
+                </nav>
+            </div>
         )
     }
 }

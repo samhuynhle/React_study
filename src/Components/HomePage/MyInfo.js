@@ -31,7 +31,7 @@ class MyInfo extends React.Component {
 
         return(
             <div>
-                <h2> My Name is {this.display.firstname} {this.display.lastname}</h2>
+                <h3> My Name is {this.display.firstname} {this.display.lastname}</h3>
                 <p> I am {this.display.age} years old. </p>
                 <p> I am a {this.display.occupation1} and {this.display.occupation2}</p>
             </div>
