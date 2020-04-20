@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
 }
 
@@ -76,6 +76,7 @@ ul {
 .Link {
   display: inline;
   color: rgb(105, 195, 224);
+  margin: 0px 20px 0px 20px;
 }
 
 .Jokes-container {
@@ -88,7 +89,7 @@ ul {
 }
 
 .layer {
-  background-color: rgba(110, 112, 121, 0.7);
+  background-color: rgba(129, 131, 141, 0.8);
   width: 100%;
   height: 100%;
   align-items: center;

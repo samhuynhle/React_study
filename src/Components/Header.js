@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom"
+import logo from '../Assets/logo.svg'
 
 class Header extends React.Component {
     constructor(props) {
@@ -13,8 +14,8 @@ class Header extends React.Component {
         return(
             <div className="App-background">
                 <div className="layer">
-                    <p>This is the Header? {this.state.answer} </p>
-                    <nav>
+                    <img src={logo} className="App-logo" alt="logo" />
+                    <nav className="rowC">
                         <h5><Link className="Link" to="/">Home</Link></h5>
                         <h5><Link className="Link" to="/apps">My Apps</Link></h5>
                     </nav>

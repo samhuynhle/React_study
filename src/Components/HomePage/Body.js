@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../../Assets/logo.svg'
 import Hello from './Hello.js'
 import UList from './UList.js'
 import MyInfo from './MyInfo.js'
@@ -22,7 +21,6 @@ class Body extends React.Component {
         }
         return (
             <header className="App-body">
-                <img src={logo} className="App-logo" alt="logo" />
                 {final}
             </header>
         )
