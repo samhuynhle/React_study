@@ -12,6 +12,8 @@ class Random1 extends React.Component {
     }
 
     handleClick() {
+        console.log(this.state.count)
+        alert(this.state.names[this.state.count] + " is here!")
         if(this.state.count < this.state.names.length - 1) {
             this.setState(state => ({
                 count: state.count + 1

@@ -5,7 +5,20 @@ class ToDo extends React.Component {
     constructor(props) {
         super(props)
         this.state = {}
+        this.count = 0
         this.ToDoList = ["Upgrade Mind", "Upgrade Body", "Upgrade Soul", "Upgrade Spirit", "Upgrade Skill"]
+        this.handleChange = this.handleChange.bind(this)
+    }
+
+    handleChange(completion) {
+        if(completion === false){
+            this.count++
+        } else {
+            this.count--
+        }
+        if(this.count === this.ToDoList.length) {
+            alert("All Tasks Completed!")
+        }
     }
 
     render() {
@@ -15,8 +28,9 @@ class ToDo extends React.Component {
             random = Math.floor(Math.random() * 100)
             
             //passing down data through props from ToDo into ToDoItem
-            final.push(<ToDoItem key={item} goal={item} random={random} completed={false}/>)
+            final.push(<ToDoItem key={item} goal={item} random={random} completed={false} handleChange={this.handleChange}/>)
         }
+
         return(
             <div className="ToDo-list">
                 <h1>To Do List: </h1>
