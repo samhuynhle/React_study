@@ -8,7 +8,7 @@ class ToDoItem extends React.Component {
             name: this.props.goal,
         }
         this.goal = this.props.goal
-        this.image = `https://picsum.photos/id/${this.props.random}/100/100`
+        this.image = `https://picsum.photos/id/${this.props.random}/125/125`
         this.handleCheck.bind(this)
     }
             
@@ -27,7 +27,7 @@ class ToDoItem extends React.Component {
 
     render() {
         return(
-            <div>
+            <div className="ToDo-List-containers">
                 <input 
                     type="checkbox"
                     defaultChecked={this.state.isCompleted}

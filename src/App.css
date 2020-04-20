@@ -21,14 +21,13 @@
 }
 .App-body {
   background-color: #282c34;
-  min-height: 50vh;
+  min-height: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding: 25px;
+  padding: 50px;
 }
 
 .App-footer {
@@ -56,20 +55,12 @@ ul {
   text-align: left;
 }
 
-.ToDo-list-img {
-  margin: 10px
-}
-
-.ToDo-list-checkbox {
-  margin-right: 10px
-}
 
 .Jokes-leader {
   color: gold
 }
 
 .Hello {
-  margin: 25px;
   color: lightblue
 }
 
@@ -80,12 +71,14 @@ ul {
 }
 
 .Jokes-container {
-  margin: 50px
+  margin: 25px
 }
 
 .rowC {
-  display:flex;
-  flex-direction: row
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 500px;
 }
 
 .layer {
@@ -98,4 +91,20 @@ ul {
   color: white;
   display: flex;
   flex-direction: column;
+}
+
+.ToDo-List-containers {
+  margin: 5px;
+  font-size: 75%;
+}
+
+
+.ToDo-list-img {
+  margin: 10px
+}
+
+.ToDo-list-checkbox {
+  margin-right: 10px;
+  height: 12px;
+  width: 12px;
 }

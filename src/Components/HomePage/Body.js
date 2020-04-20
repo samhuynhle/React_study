@@ -20,9 +20,9 @@ class Body extends React.Component {
             final.push(<div key={item[1]}>{item[0]}</div>)
         }
         return (
-            <header className="App-body">
+            <div  className="App-body">
                 {final}
-            </header>
+            </div>
         )
     }
 }
